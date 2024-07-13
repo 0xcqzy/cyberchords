@@ -1,0 +1,21 @@
+.navbar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: end;
+}
