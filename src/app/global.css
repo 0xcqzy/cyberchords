@@ -8,12 +8,6 @@ html, body {
     width: 100%;
 }
 
-:root{
-    /* CSS HEX */
---black-olive: #462409;
---amber: #f5bb00ff;
---gamboge: #ec9f05ff;
---cocoa-brown: #d76a03ff;
---rust: #bf3100ff;
---sand:#ede8d3;
+body{
+    overflow-y: hidden;
 }
