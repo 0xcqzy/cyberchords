@@ -12,38 +12,27 @@ const Nav = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
-        <Link className={`${styles.col} ${styles.link}`} href="/">
+        <Link className={`${styles.col} ${styles.link} ${styles.col1}`} href="/">
+          <div id={styles.box1} className={styles.box} style={{ opacity: isActive('/') ? 1 : '' }}></div>
           <div>art</div>
-          <div
-            id={styles.box1}
-            className={styles.box}
-            style={{ opacity: isActive('/') ? 1 : '' }}
-          ></div>
         </Link>
 
-        <Link className={`${styles.col} ${styles.link}`} href="/commercial">
+        <Link className={`${styles.col} ${styles.link} ${styles.col2}`} href="/commercial">
+          <div id={styles.box2} className={styles.box} style={{ opacity: isActive('/commercial') ? 1 : '' }}></div>
           <div>commercial</div>
-          <div
-            id={styles.box2}
-            className={styles.box}
-            style={{ opacity: isActive('/commercial') ? 1 : '' }}
-          ></div>
         </Link>
       </div>
 
       <div className={styles.right}>
-        <Link className={`${styles.col} ${styles.link}`} href="/concept-studio">
-          <div
-            id={styles.box3} className={styles.box} style={{ opacity: isActive('/concept-studio') ? 1 : ''}}
-          ></div>
+        <Link className={`${styles.col} ${styles.link} ${styles.col3}`} href="/concept-studio">
           <div>concept studio</div>
+          <div id={styles.box3} className={styles.box} style={{ opacity: isActive('/concept-studio') ? 1 : '' }}></div>
         </Link>
 
-        <Link className={`${styles.col} ${styles.link}`} href="/info">
-          <div
-            id={styles.box4} className={styles.box} style={{ opacity: isActive('/info') ? 1 : ''}}
-          ></div>
+        <Link className={`${styles.col} ${styles.link} ${styles.col4}`} href="/info">
           <div>info</div>
+          <div id={styles.box4} className={styles.box} style={{ opacity: isActive('/info') ? 1 : '' }}></div>
+
         </Link>
       </div>
     </nav>
