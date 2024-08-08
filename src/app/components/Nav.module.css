@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    z-index: 9999;
 }
 
 .link {

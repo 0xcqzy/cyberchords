@@ -5,6 +5,29 @@
 }
 
 .about{
-  padding: 0 2% ;
+  padding: 2% 2% ;
  font-size: 0.8rem;
+ color: rgb(180, 179, 179);
 }
+
+/*IMAGE SECTION ----------------------------------------------------------- */
+.imageWrapperContainer {
+  display: flex; /* Horizontal layout */
+  flex-wrap: wrap; /* Wrap to new line if needed */
+  gap: 1rem; /* Space between images */
+  padding: 2%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100vw; /* Fixed width for images */
+  height: 800px; /* Fixed height for images */
+  overflow: hidden; /* Hide overflow */
+}
+
+.imageWrapper img {
+  width: 100%; /* Fill the container */
+  height: 100%; /* Fill the container */
+  object-fit: cover; /* Ensure image covers the container */
+}
+

@@ -9,6 +9,8 @@ html, body {
 }
 
 body{
-    overflow-y: hidden;
     text-transform: uppercase;
 }
+::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+  }
