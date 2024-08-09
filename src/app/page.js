@@ -15,7 +15,7 @@ const imageKitLoader = ({ src, width, quality }) => {
   const paramsString = params.join(",");
   var urlEndpoint = "https://ik.imagekit.io/0xcqzy";
   if (urlEndpoint[urlEndpoint.length - 1] === "/") urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);
-  return `${urlEndpoint}/tr:${paramsString}/${src}`;
+  return `${urlEndpoint}/${src}?tr=${paramsString}`;
 };
 
 // Array of image paths (not full URLs)
@@ -24,6 +24,7 @@ const imageUrls = [
   "Cyberchords/2.jpg"
   // Add more image paths here as needed
 ];
+
 
 const Home = () => {
   const headerRef = useRef(null);
