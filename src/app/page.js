@@ -13,7 +13,7 @@ const imageKitLoader = ({ src, width, quality }) => {
     params.push(`q-${quality}`);
   }
   const paramsString = params.join(",");
-  var urlEndpoint = "https://ik.imagekit.io/0xcqzy";
+  var urlEndpoint = " https://ik.imagekit.io/0xcqzy/"
   if (urlEndpoint[urlEndpoint.length - 1] === "/") urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);
   return `${urlEndpoint}/${src}?tr=${paramsString}`;
 };
