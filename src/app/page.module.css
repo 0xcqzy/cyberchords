@@ -2,12 +2,11 @@
   padding: 2rem;
   text-align: center;
 }
-.header{
+.header {
   text-align: center;
   width: 100%;
-  font-size: 10rem;
+  font-size: 10vw; /* Font size is 10% of the viewport width */
 }
-
 .about{
  font-size: 0.8rem;
  color: rgb(180, 179, 179);
@@ -23,8 +22,8 @@
 
 .imageWrapper {
   position: relative;
-  width: 100vw; /* Fixed width for images */
-  height: 800px; /* Fixed height for images */
+  width: 1200px; /* Fixed width for images */
+  height: 1000px; /* Fixed height for images */
   overflow: hidden; /* Hide overflow */
 }
 
@@ -34,3 +33,12 @@
   object-fit: cover; /* Ensure image covers the container */
 }
 
+
+@media only screen and (max-width: 768px) {
+  .imageWrapper {
+    
+    width: 100vw; /* Fixed width for images */
+    height: 300px; /* Fixed height for images */
+   
+  }
+}
