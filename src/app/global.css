@@ -8,9 +8,17 @@ html, body {
     width: 100%;
 }
 
+:root {
+    --soft-gray: #A2A5AD;
+    --soft-blue: #DCDFE6;
+    --light-cream: #F0EDE5;
+    --deep-cream: #C6C0B8;
+  }
+
 body{
     text-transform: uppercase;
 }
 ::-webkit-scrollbar {
     display: none; /* Hide scrollbar in WebKit browsers */
   }
+
