@@ -74,9 +74,10 @@
     text-decoration: none;
     color: black;
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     gap: 1rem;
-    padding: 2rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
   }
   
   .closeButton {

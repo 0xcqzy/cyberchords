@@ -53,7 +53,6 @@ const Home = () => {
                 src={url}
                 alt={`Image ${index + 1}`}
                 layout="fill" // Fills the container while maintaining aspect ratio
-                objectFit="contain" // Ensures the image covers the container
               />
             </div>
           ))}
