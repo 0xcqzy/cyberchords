@@ -1,108 +1,120 @@
 .navbar {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Times New Roman', Times, serif;
-    position: fixed;
-    z-index: 9999;
-  }
-  
-  .link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    color: black;
-  }
-  
-  .left, .right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .right .col {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .col {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    padding: 0.5rem 1rem;
-  }
-  
-  .box {
-    height: 0.5rem;
-    width: 0.5rem;
-    background-color: black;
-    opacity: 0;
-    transition: opacity 0.8s ease;
-  }
-  
-  .col:hover .box {
-    opacity: 1;
-    color: black;
-  }
-  
-  .col1 { background-color: var(--soft-gray); }
-  .col2 { background-color: var(--soft-blue); }
-  .col3 { background-color: var(--light-cream); }
-  .col4 { background-color: var(--deep-cream); }
-  
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index: 9999;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: black;
+}
+
+.left,
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right .col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.col {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.box {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.col:hover .box {
+  opacity: 1;
+  color: black;
+}
+
+.col1 {
+  background-color: var(--soft-gray);
+}
+
+.col2 {
+  background-color: var(--soft-blue);
+}
+
+.col3 {
+  background-color: var(--light-cream);
+}
+
+.col4 {
+  background-color: var(--deep-cream);
+}
+
+.menuButton {
+  display: none;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fullscreenMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  z-index: 1000;
+}
+
+.fullscreenLink {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 6rem;
+  padding-left: 2rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
   .menuButton {
-    display: none;
-    font-size: 1rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .fullscreenMenu {
+    display: block;
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: grid;
-    z-index: 1000;
-  }
-  
-  .fullscreenLink {
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items:center;
-    gap: 1rem;
-    padding-top: 6rem;
-    padding-left: 2rem;
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     font-size: 1rem;
-    background: none;
-    border: none;
-    color:black;
-    cursor: pointer;
+    top: 0;
+    right: 20px;
+
   }
-  
-  @media only screen and (max-width: 768px) {
-    .menuButton {
-      display: block;
-      position: fixed; 
-      font-size: 1rem;
-      top: 0;
-      right: 20px;
-    
-    }
-  
-    .left, .right {
-      display: none;
-    }
+
+  .left,
+  .right {
+    display: none;
   }
-  
+}

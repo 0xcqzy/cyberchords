@@ -17,6 +17,7 @@ html, body {
 
 body{
     text-transform: uppercase;
+    font-family: "Kanit", sans-serif;
 }
 ::-webkit-scrollbar {
     display: none; /* Hide scrollbar in WebKit browsers */
