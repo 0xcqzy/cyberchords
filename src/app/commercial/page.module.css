@@ -51,7 +51,7 @@
 .campaignRight {
   height: 100vh;
   width: 100%;
-  background-color: var(--soft-gray);
+  background-color: var(--grey-a);
   padding: 1rem;
   text-align: center;
   color: white;

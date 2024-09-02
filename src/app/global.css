@@ -1,25 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
 :root {
-    --soft-gray: #A2A5AD;
-    --soft-blue: #DCDFE6;
-    --light-cream: #F0EDE5;
-    --deep-cream: #C6C0B8;
-  }
+    --grey-a: #999999;
+    --grey-b: #777777;
+    --grey-c: #676464;
+    --grey-d: #504e4e;
+}
 
-body{
+body {
     text-transform: uppercase;
     font-family: "Kanit", sans-serif;
 }
-::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in WebKit browsers */
-  }
 
+::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in WebKit browsers */
+}

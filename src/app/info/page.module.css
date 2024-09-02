@@ -1,0 +1,114 @@
+.contentContainer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.primaryText {
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  font-size: 10vw;
+}
+
+.secondaryText {
+  font-size: 0.8rem;
+  color: var(--grey-a);
+  text-align: left;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 50vh;
+  margin: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.contact {
+  font-weight: 900;
+  font-size: 3rem;
+  transition: color 5s ease, cursor 0.3s ease;
+  color: var(--grey-a);
+
+}
+
+.contact div {
+  color: black;
+}
+
+.contact .rep {
+  font-size: 1rem;
+  padding: 2rem;
+  color: var(--grey-a);
+  font-weight: 300;
+}
+
+.contact div:hover,
+.corpLink div:hover {
+  color: var(--grey-a);
+  cursor: pointer;
+}
+
+.corp {
+  width: 100%;
+  padding: 3rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.corp div {
+  display: flex;
+  gap: 2rem;
+}
+
+/* EXHIBITION  & AWARDS ---------------*/
+.row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+  align-items: center;
+  padding: 1rem;
+}
+
+.line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--grey-a)
+}
+
+.col1 , .col2{
+  text-align: left;
+}
+
+.col3{
+  text-align: right;
+}
+
+.fullImg {
+  margin: 5rem 0 5rem 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.fullImg img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*footer ----------------------------- */
+.contentContainer footer{
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+

@@ -10,7 +10,6 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8rem;
-  font-weight: 400;
   color: black;
 }
 
@@ -46,19 +45,19 @@
 }
 
 .col1 {
-  background-color: var(--soft-gray);
+  background-color: var(--grey-a);
 }
 
 .col2 {
-  background-color: var(--soft-blue);
+  background-color: var(--grey-b);
 }
 
 .col3 {
-  background-color: var(--light-cream);
+  background-color: var(--grey-c);
 }
 
 .col4 {
-  background-color: var(--deep-cream);
+  background-color: var(--grey-d);
 }
 
 .menuButton {
