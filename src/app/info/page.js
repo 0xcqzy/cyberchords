@@ -69,11 +69,14 @@ const Info = () => {
                     {exhibitions.map((exhibition, index) => (
                         <div key={index}>
                             <div className={styles.row}>
+
                                 <div className={styles.col1}>{exhibition.year}</div>
-                                <div className={styles.col2}>{exhibition.theme}</div>
-                                <div className={styles.col3}>{exhibition.place}</div>
+                                <div>
+                                    <div className={styles.col2}>{exhibition.theme}</div>
+                                    <div className={styles.col3}>{exhibition.place}</div>
+                                </div>
                             </div>
-                           <hr></hr>
+                            <hr></hr>
                         </div>
                     ))}
 
@@ -92,21 +95,23 @@ const Info = () => {
                         <div key={index}>
                             <div className={styles.row}>
                                 <div className={styles.col1}>{awards.year}</div>
+                                <div>
                                 <div className={styles.col2}>{awards.contest}</div>
                                 <div className={styles.col3}>{awards.result}</div>
+                                </div>
                             </div>
-                           <hr></hr>
+                            <hr></hr>
                         </div>
                     ))}
 
                 </div>
                 <footer>
-                    <div  className={styles.secondaryText}>all rights reserved</div>
-                    <div  className={styles.secondaryText}>short portfolio in pdf format</div>
+                    <div className={styles.secondaryText}>all rights reserved</div>
+                    <div className={styles.secondaryText}>short portfolio in pdf format</div>
                 </footer>
             </div>
 
-          
+
         </>
     )
 }

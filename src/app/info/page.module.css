@@ -32,11 +32,11 @@
 
 .contact {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: calc(0.5rem + 2vw); /* Adjusts based on viewport width */
   transition: color 5s ease, cursor 0.3s ease;
   color: var(--grey-a);
-
 }
+
 
 .contact div {
   color: black;
@@ -69,24 +69,14 @@
 
 /* EXHIBITION  & AWARDS ---------------*/
 .row {
-  display: grid;
-  grid-template-columns: 2fr 2fr 3fr;
-  align-items: center;
-  padding: 1rem;
+display: grid;
+grid-template-columns: 2fr 3fr;
+align-items: center;
+padding: 1rem;
 }
-
-.line {
-  width: 100%;
-  height: 0.1rem;
-  background-color: var(--grey-a)
-}
-
-.col1 , .col2{
-  text-align: left;
-}
-
-.col3{
-  text-align: right;
+.row div{
+  display: flex;
+  justify-content: space-between;
 }
 
 .fullImg {
@@ -112,3 +102,25 @@
 
 }
 
+
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .row div{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+  }
+}
+
+/* tablet screen */
+
+@media only screen and (max-width: 1000px) {
+
+}
