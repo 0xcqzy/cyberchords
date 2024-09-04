@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const campaign = [
     {
-        name: "oceanX coverstory",
+        name: "lake side",
         primaryImage: "https://ik.imagekit.io/0xcqzy/cyberchords/person%20riding%20on%20white%20moto....jpg?updatedAt=1725013920807 ",
         secondaryImage: "https://ik.imagekit.io/0xcqzy/cyberchords/At%20the%20foot%20of%20a%20mountain,_....jpg?updatedAt=1725013921054",
         type: "ad campaign",
-        about: "creative vision for oceanX",
+        about: "creative vision for lake side",
     },
 
     {
@@ -16,7 +16,7 @@ const campaign = [
         primaryImage: "https://ik.imagekit.io/0xcqzy/cyberchords/woman%20on%20body%20of%20water.jpg?updatedAt=1724936070726 ",
         secondaryImage: "https://ik.imagekit.io/0xcqzy/cyberchords/Instagram%20@Sotti.maldives.jpg?updatedAt=1724935952296",
         type: "ad campaign",
-        about: "creative vision for oceanX",
+        about: "creative photoshoot",
     },
 
     {

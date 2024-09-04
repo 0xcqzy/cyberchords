@@ -31,7 +31,6 @@
 .campaignLeft {
   height: 100vh;
   width: 100%;
-  background-color: pink;
 }
 
 .primaryImageWrapper {
@@ -51,7 +50,7 @@
 .campaignRight {
   height: 100vh;
   width: 100%;
-  background-color: var(--grey-a);
+  background-color: black;
   padding: 1rem;
   text-align: center;
   color: white;
@@ -81,5 +80,71 @@
 
 .campaignName {
   width: 100%;
-  font-size: 4rem;
+  font-size: calc(1.5rem + 2vw);
+  /* Adjust based on viewport width */
+}
+
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+  .campaignContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campaignLeft {
+    height: 300px;
+    width: 100%;
+  }
+
+  .primaryImageWrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .primaryImageWrapper img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .campaignRight {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+  }
+
+  .secondaryImageWrapper {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .secondaryImageWrapper img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+}
+
+/* tablet screen */
+
+@media only screen and (max-width: 1000px) {
+  .campaignContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }
