@@ -1,24 +1,26 @@
-.contentContainer{
+.contentContainer {
   padding: 2rem;
   text-align: center;
 }
+
 .header {
   font-weight: 900;
   text-align: center;
   width: 100%;
-  font-size: 10vw; 
+  font-size: 10vw;
 }
-.about{
- font-size: 0.8rem;
- color: rgb(180, 179, 179);
- text-align: left;
+
+.about {
+  font-size: 0.8rem;
+  color: rgb(180, 179, 179);
+  text-align: left;
 }
 
 /*IMAGE SECTION ----------------------------------------------------------- */
 .imageWrapperContainer {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 1rem; 
+  flex-wrap: wrap;
+  gap: 1rem;
   padding-top: 2rem;
   justify-content: center;
 }
@@ -26,35 +28,30 @@
 .imageWrapper {
   position: relative;
   width: 1200px;
-  height: 900px; 
-  overflow: hidden; 
+  height: 900px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
-.imageWrapper img { 
-  height: 100%; 
-  object-fit: contain; 
+.imageWrapper img {
+  height: 100%;
+  object-fit: contain;
 }
 
 /* mobile screen */
 @media only screen and (max-width: 768px) {
   .imageWrapper {
-    
-    /* Fixed width for images */
-    height: 100%; /* Fixed height for images */
+    height: 300px;
     width: 100%;
-   padding : 2px; 
+    padding: 2px;
   }
 }
 
 /* tablet screen */
-
-@media only screen and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .imageWrapper {
-    
-    width: 100%; /* Fixed width for images */
-    height: 300px; /* Fixed height for images */
-   padding : 4px; 
+    width: 100%;
+    height: 500px;
   }
 }

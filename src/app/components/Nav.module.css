@@ -107,7 +107,7 @@
     display: block;
     position: fixed;
     font-size: 1rem;
-    top: 0;
+    top: 20px;
     right: 20px;
 
   }

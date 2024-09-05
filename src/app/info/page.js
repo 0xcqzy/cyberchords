@@ -64,7 +64,7 @@ const Info = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className={styles.exhibition}>
                     <div className={styles.primaryText} >exhibitions</div>
                     {exhibitions.map((exhibition, index) => (
                         <div key={index}>
@@ -96,8 +96,8 @@ const Info = () => {
                             <div className={styles.row}>
                                 <div className={styles.col1}>{awards.year}</div>
                                 <div>
-                                <div className={styles.col2}>{awards.contest}</div>
-                                <div className={styles.col3}>{awards.result}</div>
+                                    <div className={styles.col2}>{awards.contest}</div>
+                                    <div className={styles.col3}>{awards.result}</div>
                                 </div>
                             </div>
                             <hr></hr>
