@@ -1,0 +1,56 @@
+/* style sheet for flora.js , intergalactic.js, sculpture.js */
+
+.primaryText {
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  font-size: 7vw;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+
+}
+
+.imageWrapper img {
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%; 
+}
+
+
+.arrow {
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for arrows */
+  color: white;
+  z-index: 10;
+  user-select: none;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.arrow:nth-child(1) {
+  position: absolute;
+  left: 10px;
+}
+
+.arrow:nth-child(3) {
+  position: absolute;
+  right: 10px;
+}
