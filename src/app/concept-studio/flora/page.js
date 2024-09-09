@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import style from '../section.module.css';
+import Nav from '@/app/components/Nav';
 
 const imgUrl = [
   'https://ik.imagekit.io/0xcqzy/cyberchords/a%20close%20up%20of%20a%20green%20and%20w....jpg?updatedAt=1725824295576',
@@ -27,7 +28,9 @@ const Flora = () => {
 
   return (
     <>
-      <div className={style.primaryText}>flora by cyberchords</div>
+      <Nav></Nav>
+      <div className={style.main}>
+      <div className={style.primaryText}>flora</div>
       <div className={style.sliderContainer}>
         <div className={style.arrow} onClick={prevImage}>
           &#60;
@@ -43,6 +46,7 @@ const Flora = () => {
         <div className={style.arrow} onClick={nextImage}>
           &#62;
         </div>
+      </div>
       </div>
     </>
   );

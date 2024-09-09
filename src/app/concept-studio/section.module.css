@@ -1,5 +1,9 @@
 /* style sheet for flora.js , intergalactic.js, sculpture.js */
 
+.main{
+  padding: 2rem 0 5rem 0;
+}
+
 .primaryText {
   font-weight: 900;
   text-align: center;
