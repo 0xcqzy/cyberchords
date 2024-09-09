@@ -47,6 +47,7 @@ const commercial = () => {
                                     <Image
                                         src={item.primaryImage}
                                         layout="fill"
+                                        alt= "campaign image"
                                     />
                                 </div>
                             </div>
