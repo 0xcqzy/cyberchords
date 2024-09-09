@@ -1,0 +1,34 @@
+.main{
+    padding: 2rem 0;
+}
+.secondaryText {
+    font-size: 0.8rem;
+    color: #b4b3b3;
+    text-align: left;
+    font-weight: 200;
+}
+
+.videoWrapper {
+    width: 100%;
+    height: 700px; /* Default height for large screens */
+  
+    /* Adjust for different screen sizes */
+  }
+  
+  @media (max-width: 1200px) {
+    .videoWrapper {
+      height: 600px; /* Height for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .videoWrapper {
+      height: 400px; /* Height for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .videoWrapper {
+      height: 300px; /* Height for small mobile screens */
+    }
+  }
