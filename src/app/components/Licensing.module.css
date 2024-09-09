@@ -1,0 +1,41 @@
+.main{
+    padding: 2rem 0;
+}
+.secondaryText {
+    font-size: 0.8rem;
+    color: #b4b3b3;
+    text-align: left;
+    font-weight: 200;
+}
+
+.imageWrapper {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+
+}
+
+.imageWrapper img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.mail{
+    color: black;
+}
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+    .imageWrapper {
+        height: 300px;
+    }
+}
+
+/* tablet screen */
+@media (min-width: 769px) and (max-width: 1000px) {
+    .imageWrapper {
+        height: 600px; 
+    }
+}
