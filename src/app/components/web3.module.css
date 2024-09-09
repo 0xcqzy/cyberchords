@@ -1,0 +1,68 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.projectLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+
+}
+
+.projectLink:hover .imageWrapper {
+  height: 310px;
+  opacity: 0.7;
+}
+
+.projectName {
+  color: black;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+
+  .main {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  }
+
+  .imageWrapper {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* tablet screen */
+@media (min-width: 769px) and (max-width: 1000px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .imageWrapper {
+    height: 600px;
+    width: 600px;
+  }
+}

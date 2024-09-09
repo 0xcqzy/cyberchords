@@ -1,0 +1,44 @@
+.mainContainer {
+    padding: 2rem 1rem;
+}
+
+.primeText {
+    width: 100%;
+    font-weight: 900;
+    font-size: 6vw;
+}
+
+.secText {
+    font-size: 0.8rem;
+    color: rgb(180, 179, 179);
+    text-align: left;
+}
+
+.threeSection {
+    width: 100%;
+    color: var(--grey-a);
+    text-align: center;
+    cursor: pointer;
+}
+
+.threeSection div {
+    display: inline;
+}
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+
+    .threeSection {
+        margin-top: 20px;
+    }
+
+}
+
+
+/* tablet screen */
+@media (min-width: 769px) and (max-width: 1000px) {
+
+    .threeSection {
+        margin-top: 20px;
+    }
+}
