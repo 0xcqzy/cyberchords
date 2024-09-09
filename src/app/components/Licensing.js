@@ -14,6 +14,7 @@ const Licensing = () => {
                         src="https://ik.imagekit.io/0xcqzy/cyberchords/Genius%20is%20one%20percent%20inspi....jpg?updatedAt=1725908211237"
                         layout="fill"
                         objectFit="cover"
+                        alt="promotional picture"
                     />
                 </div>
 

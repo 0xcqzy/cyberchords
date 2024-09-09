@@ -60,6 +60,7 @@ const commercial = () => {
                                         height={500} // Adjust according to your design needs
                                         objectFit="cover"
                                         quality={100}
+                                        alt= "campaign image"
                                     />
                                 </div>
 
