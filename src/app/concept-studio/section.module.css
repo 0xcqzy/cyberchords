@@ -1,7 +1,7 @@
 /* style sheet for flora.js , intergalactic.js, sculpture.js */
 
 .main{
-  padding: 2rem 0 5rem 0;
+  padding: 1rem 0 5rem 0;
 }
 
 .primaryText {
@@ -31,7 +31,8 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 100%; 
+  height: 80vh; 
+  margin-top: 2rem;
 }
 
 

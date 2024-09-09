@@ -19,6 +19,7 @@
     color: var(--grey-a);
     text-align: center;
     cursor: pointer;
+    display: flex;
 }
 
 .threeSection div {
@@ -28,8 +29,15 @@
 /* mobile screen */
 @media only screen and (max-width: 768px) {
 
+    .primeText {
+        width: 100%;
+        font-weight: 700;
+        font-size: 6vw;
+    }
+
     .threeSection {
         margin-top: 20px;
+        display: flex;
     }
 
 }
@@ -37,8 +45,15 @@
 
 /* tablet screen */
 @media (min-width: 769px) and (max-width: 1000px) {
+    .primeText {
+        width: 100%;
+        font-weight: 700;
+        font-size: 6vw;
+    }
 
     .threeSection {
         margin-top: 20px;
+        display: flex;
+        gap: 1rem;
     }
 }
