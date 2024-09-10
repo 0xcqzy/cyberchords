@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef } from 'react';
-import style from "./RollingText.module.css"; // Import CSS module for scoped styling
 import gsap from 'gsap'; // Import GSAP for animations
 
 const RollingText = () => {
@@ -53,10 +52,10 @@ const RollingText = () => {
     return (
         <>
             {/* Each div gets a ref that adds it to the textRefs array */}
-            <div ref={addToLeftToRight} className={style.rollingText}>cyberchord cyberchord cyberchord cyberchord</div>
-            <div ref={addToRightToLeft} className={style.rollingText}>cyberchord cyberchord cyberchord cyberchord</div>
-            <div ref={addToLeftToRight} className={style.rollingText}>cyberchord cyberchord cyberchord cyberchord </div>
-            <div ref={addToRightToLeft} className={style.rollingText}>cyberchord cyberchord cyberchord cyberchord</div>
+            <div ref={addToLeftToRight} >cyberchord cyberchord cyberchord cyberchord</div>
+            <div ref={addToRightToLeft} >cyberchord cyberchord cyberchord cyberchord</div>
+            <div ref={addToLeftToRight} >cyberchord cyberchord cyberchord cyberchord </div>
+            <div ref={addToRightToLeft} >cyberchord cyberchord cyberchord cyberchord</div>
 
         </>
     );
