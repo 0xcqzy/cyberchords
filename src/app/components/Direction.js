@@ -1,7 +1,7 @@
 import style from "./Direction.module.css";
-import React from 'react';
-import ReactPlayer from 'react-player';
-import RollingtText from "./rollingText";
+import React from "react";
+import ReactPlayer from "react-player";
+import RollingtText from "./RollingText"
 
 const Direction = () => {
     return (
