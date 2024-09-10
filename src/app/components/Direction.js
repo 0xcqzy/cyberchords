@@ -1,13 +1,14 @@
 import style from "./Direction.module.css";
 import React from 'react';
 import ReactPlayer from 'react-player';
+import RollingtText from "./rollingText";
 
 const Direction = () => {
     return (
         <>
             <div className="style.main">
                 <div className={style.secondaryText}>At cyberchords Studio, we dance between the worlds of art and tech, weaving dreams into reality. Through fluid collaboration with the unseen, we craft soulful experiences for brands, blending creativity with cutting-edge technology. From the whispers of neural networks to the magic of virtual spaces, we harness the power of innovation in its purest form. Our journey flows through the realms of art, science, and the human spirit, all while embracing the ethereal energy of growth and expansion.</div>
-            </div>
+           
 
 
             <div className={style.videoWrapper}>
@@ -19,6 +20,9 @@ const Direction = () => {
                     width="100%"
                     height="100%" // Make ReactPlayer take up 100% of the wrapper's height
                 />
+            </div>
+
+            <RollingtText></RollingtText>
             </div>
         </>
     )

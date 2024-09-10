@@ -16,6 +16,7 @@
   }
   
   @media (max-width: 1200px) {
+
     .videoWrapper {
       height: 600px; /* Height for medium screens */
     }
@@ -28,6 +29,10 @@
   }
   
   @media (max-width: 480px) {
+
+    .main{
+      padding: 3rem 0;
+  }
     .videoWrapper {
       height: 300px; /* Height for small mobile screens */
     }
