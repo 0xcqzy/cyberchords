@@ -1,6 +1,7 @@
 .contentContainer {
   padding: 2rem;
   text-align: center;
+  background-color: var(--darkbrown);
 }
 
 .primaryText {
@@ -8,11 +9,12 @@
   text-align: center;
   width: 100%;
   font-size: 10vw;
+  color: var(--yellow);
 }
 
 .secondaryText {
   font-size: 0.8rem;
-  color: var(--grey-a);
+  color: var(--beige);
   text-align: left;
 }
 
@@ -35,12 +37,12 @@
   font-size: calc(0.5rem + 2vw);
   /* Adjusts based on viewport width */
   transition: color 5s ease, cursor 0.3s ease;
-  color: var(--grey-a);
+  color: white;
 }
 
 
 .contact div {
-  color: black;
+  color: var(--yellow)
 }
 
 .contact .rep {
@@ -52,7 +54,7 @@
 
 .contact div:hover,
 .corpLink div:hover {
-  color: var(--grey-a);
+  color: white;
   cursor: pointer;
 }
 
@@ -61,6 +63,7 @@
   padding: 3rem 0 1rem 0;
   display: flex;
   justify-content: center;
+  color: var(--yellow);
 }
 
 .corp div {
@@ -78,6 +81,8 @@
   grid-template-columns: 2fr 3fr;
   align-items: center;
   padding: 1rem;
+  color: white;
+
 }
 
 .row div {

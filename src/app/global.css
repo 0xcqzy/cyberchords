@@ -11,11 +11,16 @@ body {
 }
 
 :root {
-    --grey-a: #999999;
-    --grey-b: #777777;
-    --grey-c: #676464;
-    --grey-d: #504e4e;
-}
+    --darkbrown: #261915;
+    --brown: #471e10;
+    --gray: #999999;
+    --beige: #d2c9a0;
+    --orange: #dd6900;
+    --yellow: #faad17;
+    --cinnamon: #794330;
+    --darkchoco: #382c28;
+  }
+  
 
 body {
     text-transform: uppercase;

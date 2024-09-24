@@ -9,11 +9,12 @@
   font-size: 10vw;
   padding: 1rem 0 1rem 0;
   text-align: left;
+  color: var(--brown);
 }
 
 .secText {
   font-size: 0.8rem;
-  color: rgb(180, 179, 179);
+  color:var(--gray);
   text-align: left;
 }
 
@@ -33,6 +34,7 @@
 .campaignLeft {
   height: 100vh;
   width: 100%;
+  background-color: var(--brown);
 }
 
 .primaryImageWrapper {
@@ -42,6 +44,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  background-color: var(--darkbrown);
 }
 
 .primaryImageWrapper img {
@@ -52,16 +55,15 @@
 .campaignRight {
   height: 100vh;
   width: 100%;
-  background-color: black;
+  background-color: var(--yellow);
   padding: 1rem;
   text-align: center;
-  color: white;
+  color: var(--brown);
 }
 
 .secondaryImageWrapper {
   position: relative;
   height: 50vh;
-  width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;

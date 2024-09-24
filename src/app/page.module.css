@@ -1,6 +1,7 @@
 .contentContainer {
   padding: 2rem;
   text-align: center;
+  background-color: var(--yellow);
 }
 
 .header {
@@ -8,11 +9,13 @@
   text-align: center;
   width: 100%;
   font-size: 10vw;
+  color: var(--brown)
+ 
 }
 
 .about {
   font-size: 0.8rem;
-  color: rgb(180, 179, 179);
+  color: #814541;
   text-align: left;
 }
 

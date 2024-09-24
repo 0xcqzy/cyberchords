@@ -45,19 +45,23 @@
 }
 
 .col1 {
-  background-color: var(--grey-a);
+  background-color: var(--beige);
+  color: var(--darkchoco);
 }
 
 .col2 {
-  background-color: var(--grey-b);
+  background-color: var(--orange);
+  color: var(--darkchoco);
 }
 
 .col3 {
-  background-color: var(--grey-c);
+  background-color: var(--cinnamon);
+  color: var(--yellow);
 }
 
 .col4 {
-  background-color: var(--grey-d);
+  background-color: var(--darkchoco);
+  color: var(--beige);
 }
 
 .menuButton {

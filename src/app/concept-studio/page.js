@@ -25,7 +25,7 @@ const ConceptStudio = () => {
                     <div
                         className={styles.primeText}
                         onClick={() => handleClick("direction")}
-                        style={{ color: activeSection === "direction" ? "black" : "gray" }}
+                        style={{ color: activeSection === "direction" ?"var(--yellow)" : "var(--gray)" }}
                     >
                         direction
                     </div>
@@ -34,7 +34,7 @@ const ConceptStudio = () => {
                     <div
                         className={styles.primeText}
                         onClick={() => handleClick("web3")}
-                        style={{ color: activeSection === "web3" ? "black" : "gray" }}
+                        style={{ color: activeSection === "web3" ?"var(--yellow)" : "var(--gray)" }}
                     >
                         web3
                     </div>
@@ -43,7 +43,7 @@ const ConceptStudio = () => {
                     <div
                         className={styles.primeText}
                         onClick={() => handleClick("licensing")}
-                        style={{ color: activeSection === "licensing" ? "black" : "gray" }}
+                        style={{ color: activeSection === "licensing" ?"var(--yellow)" : "var(--gray)" }}
                     >
                         licensing
                     </div>
