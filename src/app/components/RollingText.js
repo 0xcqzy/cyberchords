@@ -15,7 +15,7 @@ const RollingText = () => {
         // Apply a GSAP animation to all elements in the textRefs array (multiple elements)
         gsap.to(leftToRight.current, {
             x: window.innerWidth,
-            duration: 8,
+            duration: 9,
             repeat: -1,
             yoyo: false
         });
@@ -52,11 +52,8 @@ const RollingText = () => {
     return (
         <>
             {/* Each div gets a ref that adds it to the textRefs array */}
-            <div ref={addToLeftToRight} >cyberchord cyberchord cyberchord cyberchord</div>
-            <div ref={addToRightToLeft} >cyberchord cyberchord cyberchord cyberchord</div>
-            <div ref={addToLeftToRight} >cyberchord cyberchord cyberchord cyberchord </div>
-            <div ref={addToRightToLeft} >cyberchord cyberchord cyberchord cyberchord</div>
-
+            <div ref={addToLeftToRight} >cyberchords </div>
+            <div ref={addToRightToLeft} >cyberchords </div>
         </>
     );
 }
