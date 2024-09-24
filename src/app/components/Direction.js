@@ -1,7 +1,6 @@
 import style from "./Direction.module.css";
 import React from "react";
 import ReactPlayer from "react-player";
-import RollingtText from "./RollingText"
 
 const Direction = () => {
     return (
@@ -21,8 +20,6 @@ const Direction = () => {
                     height="100%" // Make ReactPlayer take up 100% of the wrapper's height
                 />
             </div>
-
-            <RollingtText></RollingtText>
             </div>
         </>
     )
