@@ -4,19 +4,12 @@
   background-color: var(--yellow);
 }
 
-.header {
-  font-weight: 900;
-  text-align: center;
-  width: 100%;
-  font-size: 10vw;
-  color: var(--brown)
- 
-}
-
 .about {
   font-size: 0.8rem;
   color: #814541;
   text-align: left;
+  font-family: var(--secondary-font);
+  
 }
 
 /*IMAGE SECTION ----------------------------------------------------------- */

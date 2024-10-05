@@ -1,7 +1,7 @@
 import Nav from "../components/Nav";
 import Styles from "../commercial/page.module.css";
 import Image from "next/image";
-
+import DynamicHeader from "../components/DynamicHeader";
 const campaign = [
     {
         name: "lake side",
@@ -37,7 +37,7 @@ const commercial = () => {
             <Nav></Nav>
             <main className={Styles.mainContainer}>
                 <div className={Styles.secText}>Cyberchords is all about that electric connection between the digital world and nature, blending a techy, futuristic feel with raw, natural beauty.</div>
-                <div className={Styles.heroText}>commercial</div>
+                <DynamicHeader text="commercial" color="var(--yellow)"/>
 
                 <div className={Styles.campaigns}>
                     {campaign.map((item, index) => (

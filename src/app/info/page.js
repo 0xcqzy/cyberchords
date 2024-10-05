@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 import styles from "./page.module.css";
 import Image from "next/image";
+import DynamicHeader from "../components/DynamicHeader";
 
 const exhibitions = [
     { year: "2024", theme: "BURNING DESIRE", place: "ROME, ITALY" },
@@ -35,7 +36,7 @@ const Info = () => {
         <>
             <Nav></Nav>
             <div className={styles.contentContainer}>
-                <header className={styles.primaryText}>cyberchords</header>
+                <DynamicHeader text="cyberchords" color="var(--yellow)" />
                 <div className={styles.secondaryText}>
                     Cyberchords is all about that electric connection between the digital world and nature, blending a techy, futuristic feel with raw, natural beauty. Their art feels like a glitchy dream, where sleek sophistication meets a wild, unpolished edge. With a style that feels like a digital meditation, they are in sync, exploring the spaces where reality blurs into a digital daydream. Cyberchords pulls you into a world that is both real and surreal. It is a call to live a life full of love and respect.
                 </div>
@@ -66,7 +67,7 @@ const Info = () => {
                 </div>
 
                 <div className={styles.exhibition}>
-                    <div className={styles.primaryText} >exhibitions</div>
+                    <DynamicHeader text="exhibitions" color="var(--yellow)" />
                     {exhibitions.map((exhibition, index) => (
                         <div key={index}>
                             <div className={styles.row}>
@@ -91,7 +92,7 @@ const Info = () => {
                 </div>
 
                 <div>
-                    <div className={styles.primaryText} >awards</div>
+                <DynamicHeader text="awards" color="white" />
                     {awards.map((awards, index) => (
                         <div key={index}>
                             <div className={styles.row}>

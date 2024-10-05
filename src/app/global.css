@@ -19,12 +19,13 @@ body {
     --yellow: #faad17;
     --cinnamon: #794330;
     --darkchoco: #382c28;
-  }
-  
+}
+
 
 body {
     text-transform: uppercase;
-    font-family: "Kanit", sans-serif;
+    font-family: var(--secondary-font);
+
 }
 
 ::-webkit-scrollbar {

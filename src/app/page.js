@@ -4,6 +4,7 @@ import styles from './page.module.css';
 import Nav from './components/Nav';
 import gsap from 'gsap';
 import Image from 'next/image';
+import DynamicHeader from './components/DynamicHeader';
 
 const imageUrls = [
   "https://ik.imagekit.io/0xcqzy/cyberchords/polarbear.jpg?updatedAt=1723233021899",
@@ -19,40 +20,43 @@ const imageUrls = [
 
 
 
-const Home = () => {
-  const headerRef = useRef(null);
-  const aboutRef = useRef(null);
-  const imageWrapperContainerRef = useRef(null);
+ const Home = () => {
+//   const headerRef = useRef(null);
+//   const aboutRef = useRef(null);
+//   const imageWrapperContainerRef = useRef(null);
 
-  useEffect(() => {
-    gsap.fromTo(
-      headerRef.current,
-      { opacity: 0, y: -100 },
-      { opacity: 1, y: 0, delay: 0.5, duration: 1.5 }
-    );
+//   useEffect(() => {
+//     gsap.fromTo(
+//       headerRef.current,
+//       { opacity: 0, y: -100 },
+//       { opacity: 1, y: 0, delay: 0.5, duration: 1.5 }
+//     );
 
-    gsap.fromTo(aboutRef.current, { opacity: 0 }, { opacity: 1, delay: 1.5 });
+//     gsap.fromTo(aboutRef.current, { opacity: 0 }, { opacity: 1, delay: 1.5 });
 
-    gsap.fromTo(imageWrapperContainerRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 2, delay: 1 });
+//     gsap.fromTo(imageWrapperContainerRef.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 2, delay: 1 });
 
-  }, []);
+//   }, []);
 
   return (
     <>
       <Nav />
+      
       <div className={styles.contentContainer}>
-        <header ref={headerRef} className={styles.header}>cyberchords</header>
-        <div ref={aboutRef} className={styles.about}>
+
+        <DynamicHeader text="cyberchords" />
+       
+        <div  className={styles.about}>
           Cyberchords is all about that electric connection between the digital world and nature, blending a techy, futuristic feel with raw, natural beauty. Their art feels like a glitchy dream, where sleek sophistication meets a wild, unpolished edge. With a style that feels like a digital meditation, they are in sync, exploring the spaces where reality blurs into a digital daydream. Cyberchords pulls you into a world that is both real and surreal. It iss a call to live a life full of love and respect.
         </div>
 
-        <div ref={imageWrapperContainerRef} className={styles.imageWrapperContainer}>
+        <div className={styles.imageWrapperContainer}>
           {imageUrls.map((url, index) => (
             <div key={index} className={styles.imageWrapper}>
               <Image
                 src={url}
                 alt={`Image ${index + 1}`}
-                layout="fill" 
+                layout="fill"
               />
             </div>
           ))}
