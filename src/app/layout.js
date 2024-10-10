@@ -1,15 +1,15 @@
 import './global.css';
-import { Protest_Strike, Orbitron } from 'next/font/google';
+import { Work_Sans, Orbitron } from 'next/font/google';
 
 // Import the fonts with their specific weights and subsets
-const primaryFont = Protest_Strike({
-  weight: '400',
+const primaryFont = Work_Sans({
+  weight: '800', // Ensure this is a string
   subsets: ['latin'],
   variable: '--primary-font',
 });
 
 const secondaryFont = Orbitron({
-  weight: '700',
+  weight: '900',
   subsets: ['latin'],
   variable: '--secondary-font',
 });

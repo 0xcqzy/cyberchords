@@ -1,62 +1,81 @@
 "use client";
-import React, { useEffect, useRef, useState } from 'react';
 
-export default function DynamicHeader({ text, color = 'var(--brown)' }) {
+import React, { useEffect, useRef } from "react";
+
+const DynamicHeader = ({ text ,color}) => {
+  const containerRef = useRef(null);
   const textRef = useRef(null);
-  const [fontSize, setFontSize] = useState(0); // Initialize font size to 0
-  const [isLoading, setIsLoading] = useState(true); // State to track loading
+  let resizeObserver = useRef(null); // Using ResizeObserver for more accurate resize detection
 
-  // Function to resize text based on parent width
-  const resizeText = () => {
-    const textElement = textRef.current;
-    const parent = textElement.parentElement;
-    const parentWidth = parent.offsetWidth - parseFloat(getComputedStyle(parent).paddingLeft) - parseFloat(getComputedStyle(parent).paddingRight); // Account for left and right padding
+  const scaleText = () => {
+    if (containerRef.current && textRef.current) {
+      const scalable = textRef.current;
+      const scalableContainer = containerRef.current;
 
-    let fontSize = 200; // Start with a large font size
-    textElement.style.fontSize = `${fontSize}px`; // Initialize font size
+      // Reset scaling to 1 for accurate width measurement
+      scalable.style.transform = "scale(1)";
 
-    // Adjust font size to fit text within the parent width
-    while (textElement.scrollWidth > parentWidth && fontSize > 0) {
-      fontSize -= 1; // Decrease font size by 1 pixel until it fits
-      textElement.style.fontSize = `${fontSize}px`;
+      // Get the container and text widths
+      const scalableContainerWidth = scalableContainer.offsetWidth;
+      const scalableWidth = scalable.offsetWidth;
+
+      // Scale the text to fit the container width
+      const scaleFactor = scalableContainerWidth / scalableWidth;
+      scalable.style.transform = `scale(${scaleFactor})`;
+
+      // Adjust the container height based on the scaled text height
+      scalableContainer.style.height = `${scalable.getBoundingClientRect().height}px`;
     }
-
-    // Ensure that short words fill the parent width
-    if (textElement.scrollWidth < parentWidth) {
-      while (textElement.scrollWidth < parentWidth && fontSize < 200) {
-        fontSize += 1; // Increase font size by 1 pixel until it fills the space
-        textElement.style.fontSize = `${fontSize}px`;
-      }
-    }
-
-    setIsLoading(false); // Set loading to false once resizing is complete
   };
 
   useEffect(() => {
-    resizeText(); // Call the resize function on mount
-    window.addEventListener('resize', resizeText); // Update on window resize
+    // Initial scaling when the component mounts
+    scaleText();
 
+    // ResizeObserver to detect any changes to the size of the container
+    resizeObserver.current = new ResizeObserver(() => {
+      // Use requestAnimationFrame to handle smooth scaling during resize
+      requestAnimationFrame(scaleText);
+    });
+
+    if (containerRef.current) {
+      resizeObserver.current.observe(containerRef.current);
+    }
+
+    // Cleanup the observer when the component unmounts
     return () => {
-      window.removeEventListener('resize', resizeText); // Cleanup on unmount
+      if (resizeObserver.current && containerRef.current) {
+        resizeObserver.current.unobserve(containerRef.current);
+      }
     };
-  }, []);
+  }, [text]);
 
   return (
     <div
-      ref={textRef}
+      ref={containerRef}
       style={{
-        display: 'block',
-        whiteSpace: 'nowrap',
-        width: '100%',
-        fontSize: 'inherit', // Allow dynamic font sizing
-        color: color, // Set your desired color
-        fontFamily: 'var(--primary-font)', // Set your desired font family
-        textAlign: 'center',
-        overflow: 'hidden', // Hide overflow
-        display: isLoading ? 'none' : 'block', // Hide text from layout until resizing is complete
+        textAlign: "center",
+        width: "100%",
       }}
+      className="scale__container--js"
     >
-      {text}
+      <h1
+        ref={textRef}
+        className="scale--js"
+        style={{
+          display: "inline-block",
+          transformOrigin: "50% 0",
+          WebkitFontSmoothing: "antialiased",
+          transform: "translate3d(0, 0, 0)",
+          fontFamily: "var(--primary-font)",
+          lineHeight: 0.9,
+          color:color,
+        }}
+      >
+        {text}
+      </h1>
     </div>
   );
-}
+};
+
+export default DynamicHeader;

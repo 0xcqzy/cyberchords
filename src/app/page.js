@@ -43,9 +43,7 @@ const imageUrls = [
       <Nav />
       
       <div className={styles.contentContainer}>
-
-        <DynamicHeader text="cyberchords" />
-       
+        <DynamicHeader text="cyberchords" color="var(--brown)"/>
         <div  className={styles.about}>
           Cyberchords is all about that electric connection between the digital world and nature, blending a techy, futuristic feel with raw, natural beauty. Their art feels like a glitchy dream, where sleek sophistication meets a wild, unpolished edge. With a style that feels like a digital meditation, they are in sync, exploring the spaces where reality blurs into a digital daydream. Cyberchords pulls you into a world that is both real and surreal. It iss a call to live a life full of love and respect.
         </div>

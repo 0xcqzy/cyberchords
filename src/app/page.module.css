@@ -1,14 +1,16 @@
 .contentContainer {
-  padding: 2rem;
+  padding:1rem 1rem;
   text-align: center;
   background-color: var(--yellow);
 }
 
 .about {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: #814541;
-  text-align: left;
+  text-align: justify;
   font-family: var(--secondary-font);
+  font-weight: 900;
+  padding: 0rem 0.3rem;
   
 }
 
