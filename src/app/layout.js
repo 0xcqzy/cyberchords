@@ -1,9 +1,10 @@
-import './global.css';
+// src/app/layout.js
+import './global.css'; // Ensure your global styles are imported
 import { Work_Sans, Orbitron } from 'next/font/google';
+import ClientLayout from './components/ClientLayout';
 
-// Import the fonts with their specific weights and subsets
 const primaryFont = Work_Sans({
-  weight: '800', // Ensure this is a string
+  weight: '800',
   subsets: ['latin'],
   variable: '--primary-font',
 });
@@ -14,16 +15,18 @@ const secondaryFont = Orbitron({
   variable: '--secondary-font',
 });
 
-// Metadata can stay here as part of your layout
+// Metadata for the layout
 export const metadata = {
   title: 'Cyberchords',
-  // description: 'a website ',
+  description: 'A website',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${primaryFont.variable} ${secondaryFont.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ClientLayout>{children}</ClientLayout> {/* Use ClientLayout here */}
+      </body>
     </html>
   );
 }

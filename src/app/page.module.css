@@ -18,14 +18,12 @@
 .imageWrapperContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 2rem;
   justify-content: center;
 }
 
 .imageWrapper {
   position: relative;
-  width: 1200px;
+  width: 2250px;
   height: 900px;
   overflow: hidden;
   display: flex;
@@ -34,6 +32,7 @@
 
 .imageWrapper img {
   height: 100%;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -42,7 +41,6 @@
   .imageWrapper {
     height: 300px;
     width: 100%;
-    padding: 2px;
   }
 }
 
